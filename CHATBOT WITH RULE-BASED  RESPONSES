@@ -23,7 +23,7 @@ def match_rule(user_input):
     for pattern, response in rules.items():
         if re.search(pattern, user_input):
             return response
-    return "I'm not sure how to respond to that. Can you please rephrase?"
+    return "Can you please rephrase?"
 
 # Main function to run the chatbot
 def chatbot():
@@ -35,6 +35,6 @@ def chatbot():
             break
         response = match_rule(user_input)
         print(f"Chatbot: {response}")
-
+##calling the chatbots functions
 if __name__ == "__main__":
     chatbot()
